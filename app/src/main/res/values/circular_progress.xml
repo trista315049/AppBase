@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CircularProgressView">
+        <attr name="borderWidth" format="dimension" />
+        <attr name="colorSequence" format="reference" />
+        <attr name="sweepAnimationDurationMillis" format="integer" />
+        <attr name="angleAnimationDurationMillis" format="integer" />
+        <attr name="minSweepAngle" format="integer" />
+    </declare-styleable>
+
+
+    <dimen name="circular_default_border_width">4dp</dimen>
+
+    <array name="circular_default_color_sequence">
+        <item>@color/circular_red</item>
+        <item>@color/circular_blue</item>
+        <item>@color/circular_yellow</item>
+        <item>@color/circular_green</item>
+    </array>
+
+    <integer name="circular_default_sweepAnimationDuration">900</integer>
+    <integer name="circular_default_angleAnimationDurationMillis">2000</integer>
+    <integer name="circular_default_miniSweepAngle">30</integer>
+
+    <color name="circular_red">#ff00ddff</color>
+    <color name="circular_blue">#ff99cc00</color>
+    <color name="circular_yellow">#ffffbb33</color>
+    <color name="circular_green">#ffff4444</color>
+  <!--  <color name="circular_red">@color/bule_00a</color>
+    <color name="circular_blue">@color/bule_00a</color>
+    <color name="circular_yellow">@color/bule_00a</color>
+    <color name="circular_green">@color/bule_00a</color>-->
+
+</resources>

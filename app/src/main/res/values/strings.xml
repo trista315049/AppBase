@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Limo</string>
+    <string name="not_network">The Internet\\\\\'s gone</string>
+    <string name="loading">Loading......</string>
+    <string name="back">back</string>
+    <string name="not_data">not data</string>
+</resources>

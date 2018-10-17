@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="80dp"
+    android:layout_height="80dp"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="horizontal">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/dialo_lin"
+        android:gravity="center"
+        android:background="@drawable/bg_edittext_normaldd"
+        >
+
+        <com.oit.limo.weight.CircularProgressView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            app:angleAnimationDurationMillis="@integer/circular_default_angleAnimationDurationMillis"
+            app:borderWidth="@dimen/circular_default_border_width"
+            app:colorSequence="@array/circular_default_color_sequence"
+            app:sweepAnimationDurationMillis="@integer/circular_default_sweepAnimationDuration" />
+        <TextView
+            android:layout_marginTop="@dimen/dp_10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/loading"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+
+</LinearLayout>
