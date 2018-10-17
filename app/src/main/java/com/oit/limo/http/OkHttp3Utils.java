@@ -6,6 +6,7 @@ import android.net.NetworkInfo;
 import android.util.Log;
 
 
+import com.oit.limo.R;
 import com.oit.limo.base.LimoApplication;
 
 import java.io.File;
@@ -16,12 +17,15 @@ import java.net.SocketException;
 import java.util.Enumeration;
 import java.util.concurrent.TimeUnit;
 
+import javax.net.ssl.SSLSocketFactory;
+
 import okhttp3.Cache;
 import okhttp3.CacheControl;
 import okhttp3.Interceptor;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
 import okhttp3.Response;
+import okhttp3.internal.platform.Platform;
 import okhttp3.logging.HttpLoggingInterceptor;
 
 /*
@@ -44,11 +48,15 @@ public class OkHttp3Utils {
     public static OkHttpClient getOkHttpClient() {
 
         if (null == mOkHttpClient) {
-
+//            int[] certificates = {R.raw.ca};
+//            SSLSocketFactory sslSocketFactory = HttpsFactroy.getSSLSocketFactory(LimoApplication.getContent(),certificates);
             //同样okhttp3后也使用build设计模式
             mOkHttpClient = new OkHttpClient.Builder()
                     //设置一个自动管理cookies的管理器
 //                    .cookieJar(new CookiesManager())
+                    //加入https 认证
+//                    .sslSocketFactory(sslSocketFactory, Platform.get().trustManager(sslSocketFactory))
+
                     //添加拦截器
                     .addInterceptor(mTokenInterceptor)
                     .addNetworkInterceptor(TestInterceptor)
