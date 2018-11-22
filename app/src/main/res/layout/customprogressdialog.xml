@@ -15,7 +15,7 @@
         android:background="@drawable/bg_edittext_normaldd"
         >
 
-        <com.oit.limo.weight.CircularProgressView
+        <com.oit.appbase.weight.CircularProgressView
             android:layout_width="40dp"
             android:layout_height="40dp"
             app:angleAnimationDurationMillis="@integer/circular_default_angleAnimationDurationMillis"

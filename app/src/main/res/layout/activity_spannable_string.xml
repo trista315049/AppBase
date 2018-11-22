@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:paddingLeft="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id="@+id/foreground"
+        android:text="ForegroundColorSpan"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/background"
+        android:text="BackgroundColorSpan"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/sizespan"
+        android:text="relativesizespan"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/strikethrough"
+        android:text="StrikethroughSpan"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:id="@+id/underline"
+        android:text="UnderlineSpan"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/superscript"
+        android:text="SuperscriptSpan"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/subscript"
+        android:text="SubscriptSpan"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/style"
+        android:text="StyleSpan"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+    <TextView
+        android:id="@+id/image"
+        android:text="ImageSpan"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/clickable"
+        android:text="ClickableSpan"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/urls"
+        android:text="URLSpan"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/move"
+        android:text="这里的文字会动的哦"
+        android:gravity="center_vertical"
+        android:minHeight="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</LinearLayout>
