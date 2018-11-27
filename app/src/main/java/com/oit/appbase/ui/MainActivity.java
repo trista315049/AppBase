@@ -54,6 +54,8 @@ public class MainActivity extends BaseActivity implements BaseView<Object>,CardP
         list.add("请求数据");
         list.add("SpannableString");
         list.add("Transition");
+        list.add("滤镜");
+        list.add("音视频合成");
         mIdLvLeftMenu.setLayoutManager(new LinearLayoutManager(this));
         adapter = new CommonRecyclerAdapter<String>(this, R.layout.item_list, list) {
             @Override
@@ -67,19 +69,29 @@ public class MainActivity extends BaseActivity implements BaseView<Object>,CardP
             @Override
             public void onItemClick(View view, int position) {
                 mRoot.closeDrawers();
-                if(position == 0){
-
-                    CardPickerDialog dialog = new CardPickerDialog();
-                    dialog.setClickListener(MainActivity.this);
-                    dialog.show(getSupportFragmentManager(), "theme");
-                }else if (position == 1){
-                    testPresenter.test(mContext,appKey,from,to);
-                }else if (position == 21) {
-                    startAct(SpannableStringActivity.class);
-                }else {
-                    startAct(TransitionActivity.class);
-
+                switch (position){
+                    case 0:
+                        CardPickerDialog dialog = new CardPickerDialog();
+                        dialog.setClickListener(MainActivity.this);
+                        dialog.show(getSupportFragmentManager(), "theme");
+                        break;
+                    case 1:
+                        testPresenter.test(mContext,appKey,from,to);
+                        break;
+                    case 2:
+                        startAct(SpannableStringActivity.class);
+                        break;
+                    case 3:
+                        startAct(TransitionActivity.class);
+                        break;
+                    case 4:
+                        startAct(FilterActivity.class);
+                        break;
+                    case 5:
+                        startAct(FilterActivity.class);
+                        break;
                 }
+
             }
         });
         lRecyclerViewAdapter.addHeaderView(mHeadView);
